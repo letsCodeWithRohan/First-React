@@ -1,0 +1,103 @@
+.header {
+    background: rgb(240, 178, 240);
+    height: 60px;
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    z-index: 100;
+    width: 95%;
+    padding: 0 3vw;
+    align-items: center;
+}
+
+.header nav ul {
+    display: flex;
+    align-items: center;
+    gap: 2.5vw;
+}
+
+.header nav ul li {
+    list-style: none;
+}
+
+.header nav ul li a {
+    text-decoration: none;
+    color: purple;
+    position: relative;
+    list-style: none;
+}
+.header nav ul li a:hover{
+    color: #fff;
+}
+.header nav ul li a.active{
+    color: purple;
+    border-bottom: 2px solid purple;
+}
+.header .nav2 {
+    display: flex;
+}
+
+.header .nav2 li {
+    list-style: none;
+}
+
+.header .nav2 {
+    display: none;
+}
+.mobileNav{
+    display: none;
+}
+@media screen and (max-width:700px) {
+    nav {
+        display: none;
+    }
+
+    .header .nav2 {
+        display: flex;
+    }
+
+    .nav2 .icons {
+        display: none;
+    }
+    .nav2 .icons.active {
+        display: block;
+    }
+    .mobileNav{
+        border-top: 1px solid purple;
+        display: flex;
+        transform: translateY(-120%);
+        position: absolute;
+        width: 100%;
+    background: rgb(240, 178, 240);
+    top: 60px;
+        height: 40vh;
+        left: 0;
+        align-items: center;
+        justify-content: center;
+    }
+    .mobileNav ul{
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+    }
+    .mobileNav ul li{
+        list-style: none;
+    }
+    .mobileNav ul li:hover a{
+        background: rgb(168, 126, 168);
+    }
+    .mobileNav ul li a{
+        text-align: center;
+        width: 100vw;
+        display: block;
+        padding: 10px;
+        /* border: 1px solid; */
+        text-decoration: none;
+        color: purple;
+    }
+    .mobileNav ul li a.active{
+        background: rgb(168, 126, 168);
+    }
+}
