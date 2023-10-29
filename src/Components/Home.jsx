@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from './Header'
+import Footer from './Footer/Footer'
 
 const Home = () => {
   document.title = "Home Page"
@@ -9,6 +10,7 @@ const Home = () => {
     <div className='page home'>
       <h1>Home</h1>
     </div>
+    <Footer />
     </>
   )
 }
