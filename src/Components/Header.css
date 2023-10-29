@@ -62,6 +62,7 @@
 
     .nav2 .icons {
         display: none;
+        color: #fff;
     }
     .nav2 .icons.active {
         display: block;

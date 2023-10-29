@@ -5,6 +5,7 @@ import './Header.css'
 const Header = () => {
     // let mobileNav = document.getElementsByClassName('mobileNav');
     // let menuIcon = document.querySelectorAll('.icons');
+    // const [icon,setIcon] = useState();
   return (
     <div className="header">
         <h1 className="logo">
